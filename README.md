@@ -19,7 +19,7 @@ Solución de automatización está lista para una primera ejecución:
 
 1- Los archivos que contiene la solución son:
 	run_test_cases_shopping.robot (archivo de partida y que contiene test cases en lenguaje a nivel negocio)
-	Resources.robot (Contiene Variables, para insertar variables de manera global en los TCs)
+	Resources.robot (Contiene Variables, para insertar parametros de manera global en los TCs)
 	Features.robot	(Contiene los "features" de los casos de prueba)
 
 2- Ejecutar caso de prueba con el siguiente comando en consola:
