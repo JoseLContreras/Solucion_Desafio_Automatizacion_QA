@@ -18,21 +18,26 @@ Se requiere:
 Solución de automatización está lista para una primera ejecución:
 
 1- Los archivos que contiene la solución son:
-	run_test_cases_shopping.robot (archivo de partida y que contiene test cases en lenguaje a nivel negocio)
-	Resources.robot (Contiene Variables, para insertar parametros de manera global en los TCs)
-	Features.robot	(Contiene los "features" de los casos de prueba)
+	
+run_test_cases_shopping.robot (archivo de partida y que contiene test cases en lenguaje a nivel negocio)
+Resources.robot (Contiene Variables, para insertar parametros de manera global en los TCs)
+Features.robot	(Contiene los "features" de los casos de prueba)
 
 2- Ejecutar caso de prueba con el siguiente comando en consola:
 	robot run_test_cases_shopping.robot
+	
+3- Clonar en carpeta local 
 
-3- Carpeta "Evidencia" donde se dejarán screenshots respectivos
+4- Dentro de la carpeta anterior, crear carpeta "Evidencia" donde se dejarán screenshots respectivos
+
+5- Modificar la ruta de carpeta "Evidencia" para los screenshots en Línea Línea 17 archivo "Resources.robot"
 
 -----------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------
 
 A tener en cuenta:
 
-1- En las carpeta quedarán archivos de salida:
+1- En la carpeta quedarán archivos de salida:
 	log.html
 	report.html
 	outout.xml
