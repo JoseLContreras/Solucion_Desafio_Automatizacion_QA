@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210506 03:23:08.861" rpa="false">
+<suite id="s1" name="Run Test Cases Shopping" source="C:\Users\Jose.Contreras\Desktop\Automatizaciones\desafio_automatizacion_qa\Jose_contreras_Desafio_Aut\run_test_cases_shopping.robot">
+<test id="s1-t1" name="Compra dos articulos en eCommerce Usuario sin Cuenta">
+<kw name="Abrir Pagina Principal" library="Features">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${testUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20210506 03:23:09.478" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20210506 03:23:09.477" endtime="20210506 03:23:24.692"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210506 03:23:24.692" endtime="20210506 03:23:24.964"></status>
+</kw>
+<status status="PASS" starttime="20210506 03:23:09.476" endtime="20210506 03:23:24.965"></status>
+</kw>
+<kw name="Añadir al carrito de compra una blusa negra talla L" library="Features">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="homefeatured"]/li[2]/div/div[2]/h5/a</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:24.974" endtime="20210506 03:23:26.034"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="homefeatured"]/li[2]/div/div[2]/div[2]/a[2]/span</arg>
+</arguments>
+<msg timestamp="20210506 03:23:26.037" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[2]/div/div[2]/div[2]/a[2]/span'.</msg>
+<status status="PASS" starttime="20210506 03:23:26.034" endtime="20210506 03:23:28.544"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="center_column"]/div/div/div[3]/p[7]/button[4]</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:28.545" endtime="20210506 03:23:30.167"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="product_payment_logos"]/div/img</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:30.168" endtime="20210506 03:23:30.965"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>group_1</arg>
+<arg>L</arg>
+</arguments>
+<msg timestamp="20210506 03:23:30.966" level="INFO">Selecting options from selection list 'group_1' by label L.</msg>
+<status status="PASS" starttime="20210506 03:23:30.965" endtime="20210506 03:23:31.266"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="color_11"]</arg>
+</arguments>
+<msg timestamp="20210506 03:23:31.267" level="INFO">Clicking element 'xpath=//*[@id="color_11"]'.</msg>
+<status status="PASS" starttime="20210506 03:23:31.267" endtime="20210506 03:23:31.511"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="add_to_cart"]/button/span</arg>
+</arguments>
+<msg timestamp="20210506 03:23:31.512" level="INFO">Clicking element 'xpath=//*[@id="add_to_cart"]/button/span'.</msg>
+<status status="PASS" starttime="20210506 03:23:31.511" endtime="20210506 03:23:31.686"></status>
+</kw>
+<status status="PASS" starttime="20210506 03:23:24.973" endtime="20210506 03:23:31.686"></status>
+</kw>
+<kw name="Pulsar Botón &quot;Continuar Comprando&quot;" library="Features">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="layer_cart"]/div[1]/div[1]/h2</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:31.689" endtime="20210506 03:23:32.810"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="layer_cart"]/div[1]/div[2]/div[4]/span/span</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:32.810" endtime="20210506 03:23:33.202"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="layer_cart"]/div[1]/div[2]/div[4]/span/span</arg>
+</arguments>
+<msg timestamp="20210506 03:23:33.202" level="INFO">Clicking element 'xpath=//*[@id="layer_cart"]/div[1]/div[2]/div[4]/span/span'.</msg>
+<status status="PASS" starttime="20210506 03:23:33.202" endtime="20210506 03:23:33.322"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="header_logo"]/a/img</arg>
+</arguments>
+<msg timestamp="20210506 03:23:33.322" level="INFO">Clicking element 'xpath=//*[@id="header_logo"]/a/img'.</msg>
+<status status="PASS" starttime="20210506 03:23:33.322" endtime="20210506 03:23:38.078"></status>
+</kw>
+<status status="PASS" starttime="20210506 03:23:31.688" endtime="20210506 03:23:38.078"></status>
+</kw>
+<kw name="Añadir al carrito un vestido de verano largo estampado, de talla S y cualquier color" library="Features">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="homefeatured"]/li[5]/div/div[2]/h5/a</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:38.080" endtime="20210506 03:23:38.183"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="homefeatured"]/li[5]/div/div[2]/h5/a</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:38.183" endtime="20210506 03:23:38.564"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="homefeatured"]/li[5]/div/div[2]/div[2]/a[2]/span</arg>
+</arguments>
+<msg timestamp="20210506 03:23:38.564" level="INFO">Clicking element 'xpath=//*[@id="homefeatured"]/li[5]/div/div[2]/div[2]/a[2]/span'.</msg>
+<status status="PASS" starttime="20210506 03:23:38.564" endtime="20210506 03:23:43.118"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="short_description_content"]/p</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:43.118" endtime="20210506 03:23:43.173"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="wishlist_button"]</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:43.173" endtime="20210506 03:23:43.482"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>random.choice($colors)</arg>
+<arg>random</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:43.483" endtime="20210506 03:23:43.492"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="add_to_cart"]/button/span</arg>
+</arguments>
+<msg timestamp="20210506 03:23:43.493" level="INFO">Clicking element 'xpath=//*[@id="add_to_cart"]/button/span'.</msg>
+<status status="PASS" starttime="20210506 03:23:43.492" endtime="20210506 03:23:43.608"></status>
+</kw>
+<status status="PASS" starttime="20210506 03:23:38.079" endtime="20210506 03:23:43.609"></status>
+</kw>
+<kw name="Pulsar Botón &quot;Continuar Comprando&quot; 2" library="Features">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="layer_cart"]/div[1]/div[1]/h2</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:43.610" endtime="20210506 03:23:45.048"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="layer_cart"]/div[1]/div[2]/div[4]/span/span</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:45.049" endtime="20210506 03:23:45.337"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="layer_cart"]/div[1]/div[2]/div[4]/span/span</arg>
+</arguments>
+<msg timestamp="20210506 03:23:45.337" level="INFO">Clicking element 'xpath=//*[@id="layer_cart"]/div[1]/div[2]/div[4]/span/span'.</msg>
+<status status="PASS" starttime="20210506 03:23:45.337" endtime="20210506 03:23:45.409"></status>
+</kw>
+<status status="PASS" starttime="20210506 03:23:43.609" endtime="20210506 03:23:45.410"></status>
+</kw>
+<kw name="Ir a carrito de compra" library="Features">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="header_logo"]/a/img</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:45.411" endtime="20210506 03:23:45.459"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="header"]/div[3]/div/div/div[3]/div/a</arg>
+</arguments>
+<msg timestamp="20210506 03:23:45.459" level="INFO">Clicking element 'xpath=//*[@id="header"]/div[3]/div/div/div[3]/div/a'.</msg>
+<status status="PASS" starttime="20210506 03:23:45.459" endtime="20210506 03:23:49.284"></status>
+</kw>
+<status status="PASS" starttime="20210506 03:23:45.411" endtime="20210506 03:23:49.286"></status>
+</kw>
+<kw name="Resumen Compra" library="Features">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="cart_summary"]/thead/tr/th[1]</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:49.289" endtime="20210506 03:23:49.357"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="center_column"]/p[2]/a[1]/span</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:49.357" endtime="20210506 03:23:49.647"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${URLscreenshot}/carrito.png</arg>
+</arguments>
+<msg timestamp="20210506 03:23:50.011" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencia/carrito.png"&gt;&lt;img src="Evidencia/carrito.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210506 03:23:49.647" endtime="20210506 03:23:50.012"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="center_column"]/p[2]/a[1]/span</arg>
+</arguments>
+<msg timestamp="20210506 03:23:50.013" level="INFO">Clicking element 'xpath=//*[@id="center_column"]/p[2]/a[1]/span'.</msg>
+<status status="PASS" starttime="20210506 03:23:50.012" endtime="20210506 03:23:53.912"></status>
+</kw>
+<status status="PASS" starttime="20210506 03:23:49.288" endtime="20210506 03:23:53.912"></status>
+</kw>
+<kw name="Crear Cuenta" library="Features">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="create-account_form"]/h3</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:53.915" endtime="20210506 03:23:53.983"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="newsletter_block_left"]/h4</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:53.983" endtime="20210506 03:23:54.274"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="email_create"]</arg>
+<arg>${Usuario}</arg>
+</arguments>
+<msg timestamp="20210506 03:23:54.275" level="INFO">Typing text 'jlcc14@gmail.com' into text field 'xpath=//*[@id="email_create"]'.</msg>
+<status status="PASS" starttime="20210506 03:23:54.275" endtime="20210506 03:23:54.582"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="SubmitCreate"]/span</arg>
+</arguments>
+<msg timestamp="20210506 03:23:54.583" level="INFO">Clicking element 'xpath=//*[@id="SubmitCreate"]/span'.</msg>
+<status status="PASS" starttime="20210506 03:23:54.582" endtime="20210506 03:23:54.767"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="account-creation_form"]/div[1]/div[5]</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:23:54.767" endtime="20210506 03:23:57.788"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="id_gender1"]</arg>
+</arguments>
+<msg timestamp="20210506 03:23:57.789" level="INFO">Clicking element 'xpath=//*[@id="id_gender1"]'.</msg>
+<status status="PASS" starttime="20210506 03:23:57.788" endtime="20210506 03:23:57.900"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="customer_firstname"]</arg>
+<arg>${Nombres}</arg>
+</arguments>
+<msg timestamp="20210506 03:23:57.901" level="INFO">Typing text 'Jose' into text field 'xpath=//*[@id="customer_firstname"]'.</msg>
+<status status="PASS" starttime="20210506 03:23:57.900" endtime="20210506 03:23:58.138"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="customer_lastname"]</arg>
+<arg>${Apellidos}</arg>
+</arguments>
+<msg timestamp="20210506 03:23:58.139" level="INFO">Typing text 'CC' into text field 'xpath=//*[@id="customer_lastname"]'.</msg>
+<status status="PASS" starttime="20210506 03:23:58.138" endtime="20210506 03:23:58.460"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="passwd"]</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20210506 03:23:58.461" level="INFO">Typing text 'jl008' into text field 'xpath=//*[@id="passwd"]'.</msg>
+<status status="PASS" starttime="20210506 03:23:58.461" endtime="20210506 03:23:58.670"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="firstname"]</arg>
+<arg>${Nombres}</arg>
+</arguments>
+<msg timestamp="20210506 03:23:58.670" level="INFO">Typing text 'Jose' into text field 'xpath=//*[@id="firstname"]'.</msg>
+<status status="PASS" starttime="20210506 03:23:58.670" endtime="20210506 03:23:58.897"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="lastname"]</arg>
+<arg>${Apellidos}</arg>
+</arguments>
+<msg timestamp="20210506 03:23:58.898" level="INFO">Typing text 'CC' into text field 'xpath=//*[@id="lastname"]'.</msg>
+<status status="PASS" starttime="20210506 03:23:58.897" endtime="20210506 03:23:59.111"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="address1"]</arg>
+<arg>${Direccion}</arg>
+</arguments>
+<msg timestamp="20210506 03:23:59.112" level="INFO">Typing text 'Alameda 6' into text field 'xpath=//*[@id="address1"]'.</msg>
+<status status="PASS" starttime="20210506 03:23:59.112" endtime="20210506 03:23:59.355"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="city"]</arg>
+<arg>${Ciudad}</arg>
+</arguments>
+<msg timestamp="20210506 03:23:59.355" level="INFO">Typing text 'Santiago' into text field 'xpath=//*[@id="city"]'.</msg>
+<status status="PASS" starttime="20210506 03:23:59.355" endtime="20210506 03:23:59.574"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="uniform-id_state"]</arg>
+</arguments>
+<msg timestamp="20210506 03:23:59.575" level="INFO">Clicking element 'xpath=//*[@id="uniform-id_state"]'.</msg>
+<status status="PASS" starttime="20210506 03:23:59.575" endtime="20210506 03:23:59.754"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>id_state</arg>
+<arg>Alabama</arg>
+</arguments>
+<msg timestamp="20210506 03:23:59.755" level="INFO">Selecting options from selection list 'id_state' by label Alabama.</msg>
+<status status="PASS" starttime="20210506 03:23:59.754" endtime="20210506 03:23:59.941"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="postcode"]</arg>
+<arg>${POBOX}</arg>
+</arguments>
+<msg timestamp="20210506 03:23:59.942" level="INFO">Typing text '12345' into text field 'xpath=//*[@id="postcode"]'.</msg>
+<status status="PASS" starttime="20210506 03:23:59.942" endtime="20210506 03:24:00.212"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="phone_mobile"]</arg>
+<arg>${Fono}</arg>
+</arguments>
+<msg timestamp="20210506 03:24:00.214" level="INFO">Typing text '(541) 754-3010' into text field 'xpath=//*[@id="phone_mobile"]'.</msg>
+<status status="PASS" starttime="20210506 03:24:00.214" endtime="20210506 03:24:00.555"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="alias"]</arg>
+<arg>${Alias}</arg>
+</arguments>
+<msg timestamp="20210506 03:24:00.556" level="INFO">Typing text 'Casa2' into text field 'xpath=//*[@id="alias"]'.</msg>
+<status status="PASS" starttime="20210506 03:24:00.555" endtime="20210506 03:24:00.838"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${URLscreenshot}/crearcuenta.png</arg>
+</arguments>
+<msg timestamp="20210506 03:24:01.205" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencia/crearcuenta.png"&gt;&lt;img src="Evidencia/crearcuenta.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210506 03:24:00.838" endtime="20210506 03:24:01.205"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="submitAccount"]/span</arg>
+</arguments>
+<msg timestamp="20210506 03:24:01.206" level="INFO">Clicking element 'xpath=//*[@id="submitAccount"]/span'.</msg>
+<status status="PASS" starttime="20210506 03:24:01.206" endtime="20210506 03:24:05.671"></status>
+</kw>
+<status status="PASS" starttime="20210506 03:23:53.914" endtime="20210506 03:24:05.671"></status>
+</kw>
+<kw name="Confirmar Dirección" library="Features">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="center_column"]/form/div/div[1]/div[1]/p/label</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:24:05.673" endtime="20210506 03:24:05.721"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="newsletter_block_left"]/h4</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:24:05.722" endtime="20210506 03:24:06.013"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${URLscreenshot}/direccion.png</arg>
+</arguments>
+<msg timestamp="20210506 03:24:06.324" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencia/direccion.png"&gt;&lt;img src="Evidencia/direccion.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210506 03:24:06.013" endtime="20210506 03:24:06.324"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="center_column"]/form/p/button/span</arg>
+</arguments>
+<msg timestamp="20210506 03:24:06.325" level="INFO">Clicking element 'xpath=//*[@id="center_column"]/form/p/button/span'.</msg>
+<status status="PASS" starttime="20210506 03:24:06.324" endtime="20210506 03:24:08.285"></status>
+</kw>
+<status status="PASS" starttime="20210506 03:24:05.672" endtime="20210506 03:24:08.285"></status>
+</kw>
+<kw name="Shipping" library="Features">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="form"]/div/div[2]/div[1]/div/div/table/tbody/tr/td[3]</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:24:08.289" endtime="20210506 03:24:08.344"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>$2.00</arg>
+</arguments>
+<msg timestamp="20210506 03:24:08.377" level="INFO">Current page contains text '$2.00'.</msg>
+<status status="PASS" starttime="20210506 03:24:08.344" endtime="20210506 03:24:08.377"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="newsletter_block_left"]/h4</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:24:08.377" endtime="20210506 03:24:08.661"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${URLscreenshot}/shipping.png</arg>
+</arguments>
+<msg timestamp="20210506 03:24:09.012" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencia/shipping.png"&gt;&lt;img src="Evidencia/shipping.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210506 03:24:08.661" endtime="20210506 03:24:09.012"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="cgv"]</arg>
+</arguments>
+<msg timestamp="20210506 03:24:09.012" level="INFO">Selecting checkbox 'xpath=//*[@id="cgv"]'.</msg>
+<status status="PASS" starttime="20210506 03:24:09.012" endtime="20210506 03:24:09.195"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="form"]/p/button/span</arg>
+</arguments>
+<msg timestamp="20210506 03:24:09.196" level="INFO">Clicking element 'xpath=//*[@id="form"]/p/button/span'.</msg>
+<status status="PASS" starttime="20210506 03:24:09.195" endtime="20210506 03:24:11.091"></status>
+</kw>
+<status status="PASS" starttime="20210506 03:24:08.286" endtime="20210506 03:24:11.092"></status>
+</kw>
+<kw name="Pago y confirmación de orden de compra" library="Features">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="cart_summary"]/thead/tr/th[4]</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:24:11.094" endtime="20210506 03:24:11.145"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="newsletter_block_left"]/h4</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:24:11.146" endtime="20210506 03:24:11.440"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Blouse</arg>
+</arguments>
+<msg timestamp="20210506 03:24:11.465" level="INFO">Current page contains text 'Blouse'.</msg>
+<status status="PASS" starttime="20210506 03:24:11.440" endtime="20210506 03:24:11.465"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Printed Summer Dress</arg>
+</arguments>
+<msg timestamp="20210506 03:24:11.489" level="INFO">Current page contains text 'Printed Summer Dress'.</msg>
+<status status="PASS" starttime="20210506 03:24:11.465" endtime="20210506 03:24:11.489"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="HOOK_PAYMENT"]/div[1]/div/p/a</arg>
+</arguments>
+<msg timestamp="20210506 03:24:11.490" level="INFO">Clicking element 'xpath=//*[@id="HOOK_PAYMENT"]/div[1]/div/p/a'.</msg>
+<status status="PASS" starttime="20210506 03:24:11.490" endtime="20210506 03:24:13.340"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="center_column"]/h1</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:24:13.340" endtime="20210506 03:24:13.387"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="newsletter_block_left"]/h4</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:24:13.388" endtime="20210506 03:24:13.676"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${URLscreenshot}/orden.png</arg>
+</arguments>
+<msg timestamp="20210506 03:24:14.008" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencia/orden.png"&gt;&lt;img src="Evidencia/orden.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210506 03:24:13.676" endtime="20210506 03:24:14.009"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="cart_navigation"]/button/span</arg>
+</arguments>
+<msg timestamp="20210506 03:24:14.010" level="INFO">Clicking element 'xpath=//*[@id="cart_navigation"]/button/span'.</msg>
+<status status="PASS" starttime="20210506 03:24:14.009" endtime="20210506 03:24:17.259"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="columns"]/div[1]/span[2]</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:24:17.259" endtime="20210506 03:24:17.302"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Order confirmation</arg>
+</arguments>
+<msg timestamp="20210506 03:24:17.325" level="INFO">Current page contains text 'Order confirmation'.</msg>
+<status status="PASS" starttime="20210506 03:24:17.302" endtime="20210506 03:24:17.325"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>//*[@id="newsletter_block_left"]/h4</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:24:17.325" endtime="20210506 03:24:17.602"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="center_column"]/p/a</arg>
+</arguments>
+<msg timestamp="20210506 03:24:17.602" level="INFO">Clicking element '//*[@id="center_column"]/p/a'.</msg>
+<status status="PASS" starttime="20210506 03:24:17.602" endtime="20210506 03:24:20.548"></status>
+</kw>
+<status status="PASS" starttime="20210506 03:24:11.093" endtime="20210506 03:24:20.549"></status>
+</kw>
+<kw name="Visitar historia de órdenes y descargar PDF" library="Features">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="order-list"]/thead/tr/th[1]</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:24:20.570" endtime="20210506 03:24:20.626"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Order history</arg>
+</arguments>
+<msg timestamp="20210506 03:24:20.648" level="INFO">Current page contains text 'Order history'.</msg>
+<status status="PASS" starttime="20210506 03:24:20.626" endtime="20210506 03:24:20.648"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="newsletter_block_left"]/h4</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:24:20.648" endtime="20210506 03:24:20.929"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>${URLscreenshot}/On_back_order.png</arg>
+</arguments>
+<msg timestamp="20210506 03:24:21.267" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencia/On_back_order.png"&gt;&lt;img src="Evidencia/On_back_order.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210506 03:24:20.929" endtime="20210506 03:24:21.267"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="order-list"]/tbody/tr/td[1]/a</arg>
+</arguments>
+<msg timestamp="20210506 03:24:21.267" level="INFO">Clicking element 'xpath=//*[@id="order-list"]/tbody/tr/td[1]/a'.</msg>
+<status status="PASS" starttime="20210506 03:24:21.267" endtime="20210506 03:24:21.368"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath=//*[@id="order-list"]/thead/tr/th[1]</arg>
+</arguments>
+<status status="PASS" starttime="20210506 03:24:21.369" endtime="20210506 03:24:21.664"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="order-list"]/tbody/tr/td[6]/a</arg>
+</arguments>
+<msg timestamp="20210506 03:24:21.664" level="INFO">Clicking link 'xpath=//*[@id="order-list"]/tbody/tr/td[6]/a'.</msg>
+<status status="PASS" starttime="20210506 03:24:21.664" endtime="20210506 03:24:21.840"></status>
+</kw>
+<status status="PASS" starttime="20210506 03:24:20.569" endtime="20210506 03:24:21.841"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210506 03:24:21.849" endtime="20210506 03:24:24.530"></status>
+</kw>
+<status status="PASS" starttime="20210506 03:23:09.474" endtime="20210506 03:24:24.531" critical="yes"></status>
+</test>
+<doc>"automationpractice"</doc>
+<status status="PASS" starttime="20210506 03:23:08.868" endtime="20210506 03:24:24.534"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Run Test Cases Shopping">Run Test Cases Shopping</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
