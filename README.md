@@ -1,3 +1,6 @@
+José Luis Contreras Cortés
+jl.contrerascortes@gmail.com
+
 # Desafio_previredQA
 Solución Desafío Automatización QA
 
